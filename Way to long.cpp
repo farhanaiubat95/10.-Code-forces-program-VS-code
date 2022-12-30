@@ -10,30 +10,16 @@ int main()
     {
         for(i=0;i<n;i++)
         {
-        cin>>str[i];
-        }
-    if(str[i]>='a' && str[i]<='z')
-    {
-      for(i=0;i<str.length();i++)
-       {
-          if(str.length()>10)
-          {
-           if(i==0)
+            cin>>str;
+            int len = str.size();
+            if(len<=10)
             {
-               cout<<str[i];
-            }
-        cout<<str.length()-2;
-            if(i==str.length()-1)
+                cout<<str<<endl;
+            }else
             {
-               cout<<str[i]<<endl;
+                cout<<str[0]<<len-2<<str[len-1]<<endl;
             }
-          }else
-        {
-           cout<<str[i]<<endl;
         }
-       }
-    }
-    }
-}       
-
-   
+   }
+   return 0;
+}
